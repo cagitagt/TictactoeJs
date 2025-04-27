@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    user-select: none;
+    color: white;
+}
+
+main {
+    background: #200122;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6f0000, #200122);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6f0000, #200122); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+#header {
+    /* border: solid; */
+    display: flex;
+    width: 235px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.player {
+    background-color: #200122;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: solid 4px #200122;
+    opacity: 0.5;
+    transition: 0.6s;
+}
+
+.player:hover {
+    border: solid 4px wheat;
+}
+
+#header .player-active {
+    opacity: 1;
+    border: solid 4 px wheat;
+}
+
+#header #xPlayer {
+    color: #5b18ea;
+}
+
+#header #oPlayer {
+    color: #a81212;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 70px);
+    grid-template-rows: repeat(3, 70px);
+    gap: 12px;
+}
+
+.cell {
+    background-color: #200122;
+    border-radius: 10px;
+    font-size: 36px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.6s background;
+}
+
+.cell:hover {
+    background-color: #2a002d;
+    border: solid 4px wheat;
+
+}
+
+#restartButton {
+    cursor: pointer;
+    width: 235px;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 30px;
+    background-color: #200122;
+    transition: 0.5s background;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: none;
+    border-radius: 10px;
+    visibility: hidden;
+}
+
+#restartButton:hover {
+    background-color: #2a002d;
+}
+
