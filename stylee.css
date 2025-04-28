@@ -28,15 +28,20 @@ h1 {
 button {
     color: #200122;
     font-size: large;
-    font-weight: 800;
+    font-weight: 700;
     border-radius: 10px;
     border: none;
-    width: 90px;
-    height: 38px;
+    width: 165px;
+    height: 40px;
     transition: 0.4s ease;
 }
 
 button:hover {
     transform: scale(1.1);
+}
+
+.choosePlayer {
+    display: flex;
+    gap: 20px;
 }
 
